@@ -1,4 +1,3 @@
-curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 curl -sL https://deb.nodesource.com/setup_15.x | bash -
 apt install -y nodejs git
 npm install express ejs
