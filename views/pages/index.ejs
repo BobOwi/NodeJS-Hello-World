@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><%- include('../partials/_header') %></head>
+<body>
+<div class="container">
+    <h2><%= title %></h2>
+    <ul class="responsive-table">
+        <li class="table-header">
+            <div class="col">Name</div>
+            <div class="col">Alter</div>
+            <div class="col">Geschlecht</div>
+        </li>
+        <% users.forEach((user) => { %>
+            <li class="table-row">
+                <div class="col" data-label="Name"><%= user.name %></div>
+                <div class="col" data-label="Alter"><%= user.age %></div>
+                <div class="col" data-label="Geschlecht"><%= user.gender === 'm' ? 'Männlich' : 'Weiblich' %></div>
+            </li>
+        <% }) %>
+    </ul>
+</div>
+</body>
+</html>
